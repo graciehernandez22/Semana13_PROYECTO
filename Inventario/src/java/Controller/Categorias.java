@@ -33,7 +33,8 @@ public class Categorias extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
       //Si da error importar la libreria correspondiente impot javax.servelet.RequestDispatcher;
-    ResquestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
+    response.setContentType("text/html;charset=UTF-8");
+        ResquestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
     dispatcher.forward(request, response);
     
     }
