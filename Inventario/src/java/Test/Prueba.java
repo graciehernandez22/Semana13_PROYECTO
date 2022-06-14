@@ -8,11 +8,11 @@ import java.util.List;
 public class Prueba {
     public static void main(String[] args){
     Prueba evaluar = new Prueba();
-       // evaluar.guardaCategoria();//Metodo guardar
+        evaluar.guardaCategoria();//Metodo guardar
         evaluar.listarCartegorias();//Metodo listar, antes de eliminar
-        evaluar.eliminarCategoria();//Metodo que eliminara la categoria indicada
+       // evaluar.eliminarCategoria();//Metodo que eliminara la categoria indicada
         evaluar.listarCartegorias();// Consultar si ha sido eliminada la categoria
-      //evaluar.editarCategoria();  
+      evaluar.editarCategoria();  
     }
     
     public void listarCartegorias(){
@@ -39,14 +39,14 @@ public class Prueba {
     Categoria guarda_cat = new Categoria();
     guarda_cat.setNom_categoria("Bebidas");//Nueva categoria a guardar
     //guarda_cat.setNom_categoria("Bebidas Naturales");//Cambiar nombre
-    //guarda_cat.setId_categoria(5);//Modificar la categoria registrada anteriormente
+   // guarda_cat.setId_categoria(2);//Modificar la categoria registrada anteriormente
     guarda_cat.setEstado_categoria(1);//Estado 1
     categoria.guardarCat(guarda_cat);   
     }
     
-   public void eliminarCategoria(){
-    CategoriaDAO categoria = new CategoriaDAOImplementar();
-    categoria.borrarCat(2);//Se eliminara la categoria con id_categoria = 2
+  // public void eliminarCategoria(){
+  //  CategoriaDAO categoria = new CategoriaDAOImplementar();
+   // categoria.borrarCat(2);//Se eliminara la categoria con id_categoria = 2
    } 
-}
+//}
 
